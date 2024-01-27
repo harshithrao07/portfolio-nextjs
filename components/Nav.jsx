@@ -21,8 +21,8 @@ const Nav = () => {
 
     const navItems = [
         {
-            name: "About Me",
-            href: "#about-me"
+            name: "Home",
+            href: "/"
         },
         {
             name: "Projects",
@@ -39,7 +39,7 @@ const Nav = () => {
             {
                 navItems.map((navItem, index) => (
                     <span className="p-1 font-normal hover:text-[#FFAE00] transition duration-300 transform" key={index}>
-                        <Link href={navItem.href} className="flex items-center">
+                        <Link href={navItem.href} className="flex items-center text-sm md:text-[15px]">
                             {navItem.name}
                         </Link>
                     </span>
@@ -50,9 +50,9 @@ const Nav = () => {
 
     return (
         <div>
-            <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8 lg:py-3 navbar border-0">
+            <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-none px-4 py-2 md:px-8 md:py-4 navbar border-0">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="font-semibold">
+                    <Link href="/" className="font-semibold text-xl md:text-3xl">
                         <h1><span className="golden-words">H</span>arshith <span className="golden-words">R</span>ao.</h1>
                     </Link>
                     <div className="flex items-center gap-4">
@@ -107,9 +107,9 @@ const Nav = () => {
                     {navList}
                     <div className="flex items-center gap-x-1">
                         <Button
-                            className="w-full mb-2 bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform"
+                            className="w-full py-2 mb-2 bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform"
                         >
-                            <span className="font-normal text-md group-hover:text-[#FFAE00] transition duration-300 transform">View Resume</span>
+                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform">View Resume</span>
                         </Button>
                     </div>
                 </Collapse>

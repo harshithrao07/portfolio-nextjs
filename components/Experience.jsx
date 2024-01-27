@@ -32,30 +32,30 @@ const Experience = () => {
 
     const renderExperiences = () => {
         return experiences.map((experience, index) => (
-            <div key={index} className='experience-card my-10'>
-                <div className='p-4'>
-                    <h1 className='font-semibold'>{experience.name}&nbsp;
+            <div data-aos="fade-up" key={index} className='experience-card my-5 md:my-10'>
+                <div className='p-3 md:p-4'>
+                    <h1 className='font-semibold text-xl md:text-3xl'>{experience.name}&nbsp;
                         <Link href={experience.link} className="text-white" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 md:w-6 md:h-6 inline">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                             </svg>
                         </Link>
                     </h1>
-                    <p className='rainbow-words font-semibold'>{experience.title}</p>
-                    <p>{experience.duration}</p>
+                    <p className='rainbow-words font-semibold text-sm md:text-xl'>{experience.title}</p>
+                    <p className='text-sm md:text-lg'>{experience.duration}</p>
                 </div>
-                <div className='p-4 border-t border-[#ffffff20]'>
+                <div className='p-1 md:p-4 border-t border-[#ffffff20]'>
                     {
                         experience.description.map((desc, index) => (
                             <ul key={index}>
-                                <li>{desc}</li>
+                                <li className='text-xs md:text-lg'>{desc}</li>
                             </ul>
                         ))
                     }
                     {
                         experience.certificate && 
-                        <button className='mt-3 ml-3 uppercase border px-4 py-2 border-[#ffffff20] hover:border-[#FFAE00] group transition duration-300 transform'>
-                            <Link href={experience.certificate} className='group-hover:text-[#ffae00] transition duration-300 transform' target='_blank'>
+                        <button className='my-2 ml-3 md:my-2 uppercase border px-2 py-0.5 md:px-3 md:py-1 border-[#ffffff20] hover:border-[#FFAE00] group transition duration-300 transform'>
+                            <Link href={experience.certificate} className='group-hover:text-[#ffae00] transition duration-300 transform text-sm md:text-lg' target='_blank'>
                                 Certificate
                             </Link>
                         </button>
@@ -66,10 +66,12 @@ const Experience = () => {
     }
 
     return (
-        <div className='px-16 my-16'>
-            <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit mb-4'>Experiences</h1>
+        <div className='px-6 lg:px-16 lg:my-16'>
+            <div className='flex justify-center md:justify-start'>
+                <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl md:text-3xl'>Experiences</h1>
+            </div>
 
-            <div className='my-10'>
+            <div className='mt-5 lg:mt-10 mb-10'>
                 {renderExperiences()}
             </div>
         </div>
