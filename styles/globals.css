@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-weight: 400;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.rainbow-words {
+    background: linear-gradient(to right, #FFAE00,  #FB00B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.navbar {
+    backdrop-filter: blur(5px) saturate(168%);
+    -webkit-backdrop-filter: blur(5px) saturate(168%);
+    background-color: rgba(11, 13, 13, 0.38);
+    border-bottom: 1px solid rgba(233, 225, 225, 0.125);
+}
+
+.golden-words {
+    color: #FFAE00;
+}
+
+
+p {
+    font-size: 1.5rem;
+    color: #b5b8be;
+}
+
+li {
+    font-size: 1.1rem;
+    list-style-type: disc;
+    color: #b5b8be;
+    list-style-position: inside;
+    padding: 10px 0 10px 20px;
+    text-indent: -1em;
+}
+
+
+@media only screen and (min-width:2400px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width:1919px) and (min-width:1600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width:1599px) and (min-width:1366px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:1365px) and (min-width:1280px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1279px) and (min-width:1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:599px) and (min-width:300px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:299px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+/* OTHER STYLING */
+
+.border-bottom-texts {
+    display:inline-block; margin:0;
+}
+
+.border-bottom-texts:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #FFAE00;  
+  transform: scaleX(0);  
+  transition: transform 500ms ease-in-out;
+}
+.border-bottom-texts:hover:after { transform: scaleX(1); }
+
+
+/* INTRO */
+.image {
+    border-radius: 100% 60% 80% 70%;
+    transition: box-shadow 0.5s ease-in-out, outline-offset 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.image:hover {
+    -webkit-box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
+    -moz-box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
+    box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
+    outline: 2px dashed #FFAE00;
+    outline-offset: 10px;
+    transform: scale(1.02);
+}
+
+
+
+/* ABOUT */
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+/* EXPERIENCE */
+.experience-card {
+    backdrop-filter: blur(4px) saturate(120%);
+    -webkit-backdrop-filter: blur(4px) saturate(120%);
+    background-color: rgba(7, 7, 7, 0.38);
+    border-radius: 12px;
+    border: 1px solid #ffffff20;
+    border-radius: 0px;
+}
+
+/* SKILLS */
+.skill-icons:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    backdrop-filter: blur(5px) saturate(168%);
+    -webkit-backdrop-filter: blur(5px) saturate(168%);
+    background-color: rgba(11, 13, 13, 0.38);
+    border-top: 1px solid rgba(233, 225, 225, 0.125);
+}
