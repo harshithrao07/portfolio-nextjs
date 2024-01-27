@@ -218,3 +218,11 @@ footer {
     background-color: rgba(11, 13, 13, 0.38);
     border-top: 1px solid rgba(233, 225, 225, 0.125);
 }
+
+/* PROJECTS CARD */
+.projects-card {
+    backdrop-filter: blur(4px) saturate(120%);
+    -webkit-backdrop-filter: blur(4px) saturate(120%);
+    background-color: rgba(7, 7, 7, 0.38);
+    border: 1px solid #ffffff20;
+}

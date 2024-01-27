@@ -5,10 +5,10 @@ const Experience = () => {
 
     const experiences = [
         {
-            name : "Access Research Labs (ARL)",
-            title : "Fullstack Developer",
-            link : "https://accessresearchlabs.com/",
-            duration : "Jan 2024 - present",
+            name: "Access Research Labs (ARL)",
+            title: "Fullstack Developer",
+            link: "https://accessresearchlabs.com/",
+            duration: "Jan 2024 - present",
             description: [
                 "Developed master-slave ESP32 communication using ESP-NOW and C programming.",
                 "Implemented MAC learning for efficient communication, configuring clear master and slave roles with unique identifiers.",
@@ -17,16 +17,16 @@ const Experience = () => {
             ],
         },
         {
-            name : "Exelon Circuits Pvt. Ltd.",
-            title : "Frontend Web Developer",
-            link : "https://exeloncircuits.com/",
-            duration : "Jul 2023 - Aug 2023",
+            name: "Exelon Circuits Pvt. Ltd.",
+            title: "Frontend Web Developer",
+            link: "https://exeloncircuits.com/",
+            duration: "Jul 2023 - Aug 2023",
             description: [
                 "Worked on building a multi page landing site for a US client, Kenfront Consulting Private Limited and its product, SpendControl using the latest technologies such as Nuxt 3 and Vue 3.",
                 "Planning and developing Interactive Static websites with Animations using Anime.js",
                 "Involved in designing, building & optimizing pages, with performance, user experience and SEO in mind."
             ],
-            certificate : "https://drive.google.com/file/d/1ExALBSUU37tgpmQmStKxYJBSch5oeA6y/view"
+            certificate: "https://drive.google.com/file/d/1ExALBSUU37tgpmQmStKxYJBSch5oeA6y/view"
         },
     ]
 
@@ -45,15 +45,16 @@ const Experience = () => {
                     <p className='text-sm md:text-lg'>{experience.duration}</p>
                 </div>
                 <div className='p-1 md:p-4 border-t border-[#ffffff20]'>
+                    <ul>
+                        {
+                            experience.description.map((desc, index) => (
+                                <li key={index} className='text-xs md:text-lg'>{desc}</li>
+                            ))
+                        }
+                    </ul>
+
                     {
-                        experience.description.map((desc, index) => (
-                            <ul key={index}>
-                                <li className='text-xs md:text-lg'>{desc}</li>
-                            </ul>
-                        ))
-                    }
-                    {
-                        experience.certificate && 
+                        experience.certificate &&
                         <button className='my-2 ml-3 md:my-2 uppercase border px-2 py-0.5 md:px-3 md:py-1 border-[#ffffff20] hover:border-[#FFAE00] group transition duration-300 transform'>
                             <Link href={experience.certificate} className='group-hover:text-[#ffae00] transition duration-300 transform text-sm md:text-lg' target='_blank'>
                                 Certificate
