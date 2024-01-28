@@ -21,7 +21,7 @@ const Projects = () => {
                 "Welcome to our user-friendly Van Rental App, designed with a strong emphasis on providing a seamless navigation experience and a polished interface to enhance overall usability.",
                 "Integrated Firebase Authentication and Firestore Database for efficient and streamlined data storage."
             ],
-            tech: ["React.js", "React-Router", "Vite.js", "Firebase Auth", "Firestore DB",  "Netlify"],
+            tech: ["React.js", "React-Router", "Vite.js", "Firebase Auth", "Firestore DB", "Netlify"],
             liveSite: "https://the-vanlife.netlify.app/",
             sourceCode: "https://github.com/harshithrao07/-vanlife",
             images: "/assets/projects/vanlife.png"
@@ -85,19 +85,29 @@ const Projects = () => {
 
     const renderProjects = () => {
         return projects.map((project, index) => (
-            <div key={index} className={`w-full grid grid-cols-2 my-24`}>
-                <div className={`projects-card p-8 rounded-2xl ${index % 2 === 0 ? "order-1" : "order-2"}`}>
-                    <h1 className='font-semibold text-3xl mb-3 rainbow-words'>{project.name}</h1>
-                    <div className='flex flex-wrap text-xs gap-2 mb-5'>
+            <div
+                key={index} className={`w-full grid md:grid-cols-2 ${index != 0 ? index == projects.length - 1 ? "mt-24" : "my-24" : "mb:24"}`}>
+                <div className={`flex items-center md:order-2 justify-center ${index % 2 === 0 ? "md:order-2 md:ml-10" : "md:order-1 md:mr-10"}`}>
+                    <Image
+                        src={project.images}
+                        height={1000}
+                        width={1000}
+                        alt={project.name}
+                        className='relative translate-y-1 z-10'
+                    />
+                </div>
+                <div className={`projects-card md:order-1 lg:p-6 rounded-2xl ${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                    <h1 className='font-semibold text-2xl mt-3 lg:mt-0 px-3 lg:px-0 md:text-3xl mb-2 md:mb-3 rainbow-words'>{project.name}</h1>
+                    <div className='flex px-3 lg:px-0 flex-wrap text-[10px] font-semibold md:text-xs gap-2 mb-2 md:mb-5'>
                         {
                             project.tech.map((tech, index) => (
-                                <button key={index} className='py-0.5 px-1.5 bg-[#191919] rounded-xl cursor-default'>
+                                <button key={index} className='py-0.5 md:py-1 px-2 bg-[#191919] rounded-xl cursor-default'>
                                     <span className=''>{tech}</span>
                                 </button>
                             ))
                         }
                     </div>
-                    <ul>
+                    <ul className='text-sm px-1 lg:px-0'>
                         {
                             project.about.map((desc, index) => (
 
@@ -105,37 +115,32 @@ const Projects = () => {
                             ))
                         }
                     </ul>
-                    <div className={`flex gap-5 mt-3`}>
-                        {project.sourceCode && <button className='px-4 py-2 border rounded-full'><Link target='_blank' href={project.sourceCode}>Souce Code <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 inline">
+                    <div className={`flex md:gap-5 mt-2 justify-around md:mt-3 px-2 text-xs md:text-md mb-6 lg:mb-0`}>
+                        {project.sourceCode && <button className='px-2 py-1 md:px-4 md:py-2 border rounded-full group source-code'><Link target='_blank' href={project.sourceCode}>Souce Code <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 md:w-4 md:h-4 inline group-hover:translate-x-1 group-hover:scale-110 duration-300 transform-gpu">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                         </svg>
                         </Link></button>}
-                        {project.liveSite && <button className='px-4 py-2 border rounded-full golden-words border-[#ffae00]'><Link target='_blank' href={project.liveSite}>Live Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 inline">
+                        {project.liveSite && <button className='px-2 py-1 md:px-4 md:py-2 border rounded-full golden-words border-[#ffae00] group live-site'><Link target='_blank' href={project.liveSite}>Live Demo <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 md:w-4 md:h-4 inline group-hover:translate-x-1 group-hover:scale-110 duration-300 transform-gpu">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                         </svg>
                         </Link></button>}
                     </div>
                 </div>
-                <div className={`flex items-center justify-center ${index % 2 === 0 ? "order-2 ml-10" : "order-1 mr-10"}`}>
-                    <Image
-                        src={project.images}
-                        height={1000}
-                        width={1000}
-                        alt={project.name}
-                     />
-                </div>
             </div>
         ))
-    }
+    } 
 
     return (
-        <div className='px-6 lg:px-16 lg:mb-16 lg:mt-24'>
-            <div className='flex justify-center md:justify-start'>
-                <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl md:text-3xl'>Experiences</h1>
+        <div className='px-6 lg:px-16 lg:mb-16 mt-16 md:mt-24'>
+            <div className='flex justify-start'>
+                <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit mb-6 lg:mb-12 text-xl md:text-3xl'>Experiences</h1>
             </div>
 
             <div>
                 {renderProjects()}
+            </div>
+            <div className='text-center my-10 lg:my-16'>
+                <h1 className='text-xl lg:text-3xl font-semibold'>Check out some of my other projects on <Link href="https://github.com/harshithrao07" className='rainbow-words'>Github</Link></h1>
             </div>
         </div>
     )

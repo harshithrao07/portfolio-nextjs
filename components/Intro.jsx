@@ -43,7 +43,7 @@ const Intro = () => {
         return icons.map((icon, index) => (
             <Link key={index} href={icon.link} target='_blank'>
                 <FontAwesomeIcon
-                    className='text-2xl md:text-3xl lg:text-4xl hover:cursor-pointer hover:text-[#FFAE00] transition duration-300 transform'
+                    className='text-2xl md:text-3xl lg:text-4xl hover:cursor-pointer hover:text-[#FFAE00] transition duration-300 transform-gpu'
                     icon={icon.name}
                 />
             </Link>
@@ -51,7 +51,7 @@ const Intro = () => {
     }
 
     return (
-        <div data-aos="fade-zoom-in" className='px-6 mb-5 lg:my-0 lg:px-0 min-h-screen grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default'>
+        <div data-aos="fade-zoom-in" className='px-6 mb-5 lg:my-0 lg:px-0 grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default'>
             <div className='md:order-2 flex justify-center'>
                 <Tilt className="tilt-container w-1/2 md:w-3/4 lg:w-full" options={defaultOptions}>
                     <Image
@@ -59,14 +59,14 @@ const Intro = () => {
                         height={300}
                         width={300}
                         alt='Harshith Rao'
-                        className='image w-full md:w-full transition duration-300 transform outline outline-2 outline-[#FFB000]'
+                        className='image w-full md:w-full transition duration-300 transform-gpu outline outline-2 outline-[#FFB000]'
                     />
                 </Tilt>
             </div>
-            <div className='md:order-1 text-center md:text-left'>
-                <h1 className='font-semibold text-xl md:text-3xl lg:text-4xl intro-text'>
-                    Hey, I'm <span className='golden-words border-bottom-texts'>Harshith</span><span className="wave text-2xl lg:text-5xl">👋</span><br />
-                    <span className='pb-3'>and I am a passionate</span><br />
+            <div className='md:order-1 text-center md:text-left mt-3 md:mt-0'>
+                <h1 className='font-semibold text-xl md:text-3xl lg:text-4xl intro-text '>
+                    Hey, I'm <span className='golden-words md:border-bottom-texts'>Harshith</span><span className="wave text-2xl md:text-3xl lg:text-5xl">👋</span><br />
+                    and I am a passionate<br />
                     <span className='rainbow-words'><Typewriter
                         words={['Fullstack Developer.', 'Tech Enthusiast.', 'Philomath.']}
                         loop={0}

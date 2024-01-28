@@ -29,7 +29,7 @@ const Education = () => {
     const renderEducation = () => {
         return educations.map((education, index) => (
             <div 
-            data-aos="fade-down"
+            data-aos="fade-up"
             key={index} className="flex-col cursor-default w-full h-full text-[#b5b8be] py-4 md:py-7 pl-2 md:pl-5 border-l-2 border-l-[#b5b8be] hover:border-l-[#FFAE00] hover:bg-[#191919] group">
                 <h1 className="font-bold text-md md:text-2xl group-hover:text-white">{education["institution-name"]}&nbsp;
                     <Link href={education.link} className="text-white" target="_blank">
@@ -47,8 +47,8 @@ const Education = () => {
 
     return (
         <div className="px-6 lg:px-16 lg:my-16 mt-10">
-            <div className="flex justify-center md:justify-start">
-                <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit mb-4 text-xl md:text-3xl'>Education</h1>
+            <div className="flex justify-start">
+                <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit mb-4 text-xl md:text-3xl'>Education</h1>
             </div>
 
             <div className="mt-3 lg:mt-10 mb-10">

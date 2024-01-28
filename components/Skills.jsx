@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 
 const Skills = () => {
@@ -103,10 +104,6 @@ const Skills = () => {
             {
                 name: "Postman",
                 image: "/assets/skills/tools/postman-icon.png"
-            },
-            {
-                name: "PlatformIO",
-                image: "/assets/skills/tools/PlatformIO_logo.svg"
             }
         ]
     }
@@ -115,17 +112,17 @@ const Skills = () => {
         const data = skills[category];
 
         return (
-            <div key={index} className={`my-5 lg:my-16 ${category !== 'languages' ? 'border-t border-[#ffffff20]' : ''}`}>
-                <h3 className='text-xl lg:text-2xl my-5 lg:my-8 rainbow-words font-semibold'>{category === 'languages' ? 'Languages' : category === 'frameworks' ? 'Frameworks and Libraries' : 'Tools and Tech'}</h3>
-                <div data-aos={category === 'frameworks' ? "fade-right" : "fade-left"} className='flex justify-center gap-10 lg:gap-20 flex-wrap'>
+            <div key={index} className={`my-5 lg:my-12 ${category !== 'languages' ? 'border-t border-[#ffffff20]' : ''}`}>
+                <h3 className='text-xl lg:text-2xl my-5 lg:my-10 rainbow-words font-semibold'>{category === 'languages' ? 'Languages' : category === 'frameworks' ? 'Frameworks and Libraries' : 'Tools and Tech'}</h3>
+                <div data-aos={category === 'frameworks' ? "fade-right" : "fade-left"} className='flex justify-center gap-4 md:gap-10 lg:gap-x-20 lg:gap-y-10 flex-wrap'>
                     {data.map((item, index) => (
                         <div className='flex-col items-center' key={index}>
                             <Image
                                 src={item.image}
                                 alt={item.name}
-                                height={75}
-                                width={75}
-                                className='skill-icons mx-auto'
+                                height={80}
+                                width={80}
+                                className='skill-icons mx-auto pt-[20%] md:pt-0'
                             />
                             <p className='mt-3 text-xs lg:text-[14px]'>{item.name}</p>
                         </div>
@@ -137,8 +134,8 @@ const Skills = () => {
 
     return (
         <div className='px-6 lg:px-16 lg:my-16'>
-            <div className='flex justify-center lg:justify-start'>
-                <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl lg:text-3xl'>Skills</h1>
+            <div className='flex justify-start'>
+                <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl lg:text-3xl'>Skills</h1>
             </div>
 
             <div className='text-center'>
@@ -146,6 +143,7 @@ const Skills = () => {
                 {renderSkills('frameworks')}
                 {renderSkills('tools')}
             </div>
+
         </div>
     )
 }

@@ -30,7 +30,7 @@ const Nav = () => {
         },
         {
             name: "Contact Me",
-            href: "#"
+            href: "/contact"
         }
     ]
 
@@ -38,7 +38,7 @@ const Nav = () => {
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {
                 navItems.map((navItem, index) => (
-                    <span className="p-1 font-normal hover:text-[#FFAE00] transition duration-300 transform" key={index}>
+                    <span className="p-1 font-normal hover:text-[#FFAE00] transition duration-300 transform-gpu" key={index}>
                         <Link href={navItem.href} className="flex items-center text-sm md:text-[15px]">
                             {navItem.name}
                         </Link>
@@ -50,7 +50,7 @@ const Nav = () => {
 
     return (
         <div>
-            <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-none px-4 py-2 md:px-8 md:py-4 navbar border-0">
+            <Navbar className="fixed top-0 z-20 h-max max-w-full rounded-none px-4 py-2 md:px-8 md:py-4 navbar border-0">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="font-semibold text-xl md:text-3xl">
                         <h1><span className="golden-words">H</span>arshith <span className="golden-words">R</span>ao.</h1>
@@ -59,9 +59,9 @@ const Nav = () => {
                         <div className="mr-4 hidden lg:block">{navList}</div>
                         <div className="flex items-center gap-x-1">
                             <Button
-                                className="hidden lg:inline-block bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform"
+                                className="hidden lg:inline-block bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform-gpu"
                             >
-                                <span className="font-normal text-md group-hover:text-[#FFAE00] transition duration-300 transform">View Resume</span>
+                                <span className="font-normal text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
                             </Button>
                         </div>
                         <IconButton
@@ -107,9 +107,9 @@ const Nav = () => {
                     {navList}
                     <div className="flex items-center gap-x-1">
                         <Button
-                            className="w-full py-2 mb-2 bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform"
+                            className="w-full md:w-fit py-2 mb-2 bg-transparent rounded-none border live-site hover:border-[#FFAE00] group transition duration-300 transform-gpu"
                         >
-                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform">View Resume</span>
+                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu"><Link href="https://flowcv.com/resume/hj7caj6o85">View Resume</Link></span>
                         </Button>
                     </div>
                 </Collapse>

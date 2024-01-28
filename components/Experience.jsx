@@ -32,7 +32,7 @@ const Experience = () => {
 
     const renderExperiences = () => {
         return experiences.map((experience, index) => (
-            <div data-aos="fade-up" key={index} className='experience-card my-5 md:my-10'>
+            <div data-aos="fade-down" key={index} className='experience-card my-5 md:my-10'>
                 <div className='p-3 md:p-4'>
                     <h1 className='font-semibold text-xl md:text-3xl'>{experience.name}&nbsp;
                         <Link href={experience.link} className="text-white" target="_blank">
@@ -48,15 +48,15 @@ const Experience = () => {
                     <ul>
                         {
                             experience.description.map((desc, index) => (
-                                <li key={index} className='text-xs md:text-lg'>{desc}</li>
+                                <li key={index} className='text-[10px] md:text-lg'>{desc}</li>
                             ))
                         }
                     </ul>
 
                     {
                         experience.certificate &&
-                        <button className='my-2 ml-3 md:my-2 uppercase border px-2 py-0.5 md:px-3 md:py-1 border-[#ffffff20] hover:border-[#FFAE00] group transition duration-300 transform'>
-                            <Link href={experience.certificate} className='group-hover:text-[#ffae00] transition duration-300 transform text-sm md:text-lg' target='_blank'>
+                        <button className='my-2 ml-3 md:my-2 uppercase border px-2 py-0.5 md:px-3 md:py-1 border-[#ffffff20] hover:border-[#FFAE00] group transition duration-300 transform-gpu'>
+                            <Link href={experience.certificate} className='group-hover:text-[#ffae00] transition duration-300 transform-gpu text-sm md:text-lg' target='_blank'>
                                 Certificate
                             </Link>
                         </button>
@@ -68,8 +68,8 @@ const Experience = () => {
 
     return (
         <div className='px-6 lg:px-16 lg:my-16'>
-            <div className='flex justify-center md:justify-start'>
-                <h1 className='font-semibold border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl md:text-3xl'>Experiences</h1>
+            <div className='flex justify-start'>
+                <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl md:text-3xl'>Experiences</h1>
             </div>
 
             <div className='mt-5 lg:mt-10 mb-10'>

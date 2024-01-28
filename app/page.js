@@ -18,7 +18,7 @@ const Home = () => {
  }, [])
 
   return (
-    <section className="pt-10">
+    <section className="pt-16 md:pt-24">
       <Intro />
       <About />
       <Education />

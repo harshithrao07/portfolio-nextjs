@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 .rainbow-words {
-    background: linear-gradient(to right, #FFAE00, #FB00B8);
+    background: linear-gradient(to right, #00d5ff, #ff00d9, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -60,16 +60,9 @@ li {
     line-height: 3rem !important;
 }
 
-
-@media only screen and (max-width:1023px) and (min-width:600px) {
-    .intro-text {
-        line-height: 2.5rem !important;
-    }
-}
-
 @media only screen and (max-width:599px) and (min-width:300px) {
     .intro-text {
-        line-height: 2rem !important;
+        line-height: 1.8rem !important;
     }
 }
 
@@ -89,7 +82,7 @@ li {
 .border-bottom-texts:after {
     display: block;
     content: '';
-    border-bottom: solid 3px #FFAE00;
+    border-bottom: solid 2px #FFAE00;
     transform: scaleX(0);
     transition: transform 500ms ease-in-out;
 }
@@ -173,20 +166,20 @@ li {
 .experience-card {
     backdrop-filter: blur(4px) saturate(120%);
     -webkit-backdrop-filter: blur(4px) saturate(120%);
-    background-color: rgba(7, 7, 7, 0.38);
-    border-radius: 12px;
+    background-color: #07070761;
     border: 1px solid #ffffff20;
     border-radius: 0px;
 }
 
 /* SKILLS */
-.skill-icons{
+.skill-icons {
     aspect-ratio: 3/2;
     object-fit: contain;
 }
 
 .skill-icons:hover {
     animation: skill-icons-animation 700ms linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes skill-icons-animation {
@@ -225,4 +218,16 @@ footer {
     -webkit-backdrop-filter: blur(4px) saturate(120%);
     background-color: rgba(7, 7, 7, 0.38);
     border: 1px solid #ffffff20;
+}
+
+.source-code:hover {
+    -webkit-box-shadow: 0px 0px 101px 0px rgba(255, 255, 255, 0.24);
+    -moz-box-shadow: 0px 0px 101px 0px rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 0px 101px 0px rgba(255, 255, 255, 0.24);
+}
+
+.live-site:hover {
+    -webkit-box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
+    -moz-box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
+    box-shadow: 0px 0px 101px 0px rgba(255, 174, 0, 0.24);
 }
