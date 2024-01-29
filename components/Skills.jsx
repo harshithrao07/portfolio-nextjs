@@ -114,7 +114,7 @@ const Skills = () => {
         return (
             <div key={index} className={`my-5 lg:my-12 ${category !== 'languages' ? 'border-t border-[#ffffff20]' : ''}`}>
                 <h3 className='text-xl lg:text-2xl my-5 lg:my-10 rainbow-words font-semibold'>{category === 'languages' ? 'Languages' : category === 'frameworks' ? 'Frameworks and Libraries' : 'Tools and Tech'}</h3>
-                <div data-aos={category === 'frameworks' ? "fade-right" : "fade-left"} className='flex justify-center gap-4 md:gap-10 lg:gap-x-20 lg:gap-y-10 flex-wrap'>
+                <div className='flex justify-center gap-4 md:gap-10 lg:gap-x-20 lg:gap-y-10 flex-wrap'>
                     {data.map((item, index) => (
                         <div className='flex-col items-center' key={index}>
                             <Image

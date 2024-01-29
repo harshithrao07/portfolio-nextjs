@@ -49,15 +49,6 @@ const Projects = () => {
             images: "/assets/projects/kenfront.png"
         },
         {
-            name: "Portfolio Website",
-            about: [
-                "An engaging multi-page landing site for Kenfront Consulting Private Limited and its product , SpendControl with animations using Anime.js.",
-                "Built using latest technologies which offers enhanced performance resulting in a seamless user experience."
-            ],
-            tech: ["React.js", "Next.js", "Tailwind CSS", "Material-Tailwind"],
-            images: "/assets/projects/portfolio.png"
-        },
-        {
             name: "Catadogs",
             about: [
                 "Catadogs is an animal adoption website that allows users to choose animals for adoption from a list and send adoption requests to the admin",

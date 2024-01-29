@@ -38,7 +38,7 @@ const Nav = () => {
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             {
                 navItems.map((navItem, index) => (
-                    <span className="p-1 font-normal hover:text-[#FFAE00] transition duration-300 transform-gpu" key={index}>
+                    <span onClick={() => setOpenNav(false)} className="p-1 font-normal hover:text-[#FFAE00] transition duration-300 transform-gpu" key={index}>
                         <Link href={navItem.href} className="flex items-center text-sm md:text-[15px]">
                             {navItem.name}
                         </Link>
