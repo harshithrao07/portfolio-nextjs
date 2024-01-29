@@ -51,9 +51,9 @@ const Intro = () => {
     }
 
     return (
-        <div data-aos="fade-zoom-in" className='px-6 mb-5 lg:my-0 lg:px-0 grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default'>
+        <div data-aos="fade-zoom-in" className='h-screen flex flex-col justify-evenly px-6 mb-5 lg:my-0 lg:px-0 md:grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default'>
             <div className='md:order-2 flex justify-center'>
-                <Tilt className="tilt-container w-1/2 md:w-3/4 lg:w-full" options={defaultOptions}>
+                <Tilt className="tilt-container px-5 md:px-0 w-full md:w-3/4 lg:w-full" options={defaultOptions}>
                     <Image
                         src="/assets/harshith_rao.jpeg"
                         height={300}
@@ -63,7 +63,7 @@ const Intro = () => {
                     />
                 </Tilt>
             </div>
-            <div className='md:order-1 text-center md:text-left mt-3 md:mt-0'>
+            <div className='md:order-1 text-center md:text-left'>
                 <h1 className='font-semibold text-xl md:text-3xl lg:text-4xl intro-text '>
                     Hey, I'm <span className='golden-words md:border-bottom-texts'>Harshith</span><span className="wave text-2xl md:text-3xl lg:text-5xl">👋</span><br />
                     and I am a passionate<br />

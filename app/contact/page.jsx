@@ -44,7 +44,7 @@ const Contact = () => {
     ]
 
     return (
-        <div className='px-6 lg:px-16 lg:mb-14 mt-16 mb-10 md:mt-28'>
+        <div className='px-6 lg:px-16 lg:mb-14 mt-16 mb-5 md:mt-28 md:h-max'>
             <div className='flex justify-start'>
                 <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit mb-2 lg:mb-6 text-xl md:text-3xl'>Contact Me</h1>
             </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                         <button className='uppercase py-1 px-3 lg:py-2 lg:px-9 border shadow-none text-xs mt-2 md:mt-0 md:text-sm font-thin bg-transparent rounded-md hover:bg-[#191919]'><span>Submit</span></button>
                     </form>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-y-2 md:gap-y-3 mt-8 md:mt-0'>
+                <div className='grid place-content-center place-items-center gap-y-2 md:gap-y-3 mt-8 md:mt-0'>
                     <h3 className='text-2xl md:text-3xl rainbow-words font-semibold'>Get in touch!</h3>
                     {
                         icons.map((icon, index) => (

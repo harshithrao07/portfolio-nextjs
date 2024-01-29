@@ -106,11 +106,13 @@ const Nav = () => {
                 <Collapse open={openNav}>
                     {navList}
                     <div className="flex items-center gap-x-1">
+                    <Link href="https://flowcv.com/resume/hj7caj6o85" target="_blank">
                         <Button
                             className="w-full md:w-fit py-2 mb-2 bg-transparent rounded-none border live-site hover:border-[#FFAE00] group transition duration-300 transform-gpu"
                         >
-                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu"><Link href="https://flowcv.com/resume/hj7caj6o85">View Resume</Link></span>
+                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
                         </Button>
+                    </Link>
                     </div>
                 </Collapse>
             </Navbar>
