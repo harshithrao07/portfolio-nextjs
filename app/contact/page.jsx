@@ -44,7 +44,7 @@ const Contact = () => {
     ]
 
     return (
-        <div className='px-6 lg:px-16 lg:mb-14 mt-16 mb-5 md:mt-28 md:h-max'>
+        <div className='px-6 h-max xl:min-h-screen lg:px-16 lg:mb-14 mt-16 mb-5 md:mt-28 md:h-max'>
             <div className='flex justify-start'>
                 <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit mb-2 lg:mb-6 text-xl md:text-3xl'>Contact Me</h1>
             </div>
