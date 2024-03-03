@@ -7,6 +7,7 @@ import Skills from "@/components/Skills"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react"
+import Contact from "@/components/Contact"
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
       <Education />
       <Experience />
       <Skills />
+      <Contact />
     </section>
   )
 }

@@ -17,6 +17,13 @@ body {
     scroll-behavior: smooth;
 }
 
+.intro {
+    background: url('/assets/grid.png'), black;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -47,8 +54,6 @@ body::-webkit-scrollbar {
 p {
     color: #b5b8be;
 }
-
-
 
 
 li {

@@ -51,7 +51,7 @@ const Intro = () => {
     }
 
     return (
-        <div data-aos="fade-zoom-in" className='h-screen flex flex-col justify-evenly px-6 mb-5 lg:my-0 lg:px-0 md:grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default'>
+        <div data-aos="fade-zoom-in" className='h-screen flex flex-col justify-evenly px-6 mb-5 lg:my-0 lg:px-0 md:grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default intro'>
             <div className='md:order-2 flex justify-center'>
                 <Tilt className="tilt-container px-5 md:px-0 w-full md:w-3/4 lg:w-full" options={defaultOptions}>
                     <Image
