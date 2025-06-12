@@ -5,9 +5,9 @@ const Education = () => {
     const educations = [
         {
             "institution-name": "NMAM Institute of Technology",
-            "year": "2020-present",
+            "year": "2020-2024",
             "course": "Computer Science & Engineering",
-            "grade": "CGPA: 9.08",
+            "grade": "CGPA: 9.1",
             "link": "https://nmamit.nitte.edu.in/"
         },
         {

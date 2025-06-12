@@ -11,10 +11,9 @@ const About = () => {
                     Greetings! <span className="wave text-md lg:text-xl">👋</span>
                 </p>
                 <p className="mb-3">
-                    I'm currently a fourth-year student majoring in Computer Science and Engineering at NMAM Institute of Technology (NMAMIT). My main passion lies in web development - it's where I thrive and continuously explore. I bring innovation and leadership to the table when needed, but I'm also a dependable team player.
-                </p>
+                    I'm someone who finds real excitement in the world of computer science and engineering. I enjoy solving problems, building creative solutions, and diving into projects that challenge my thinking. Whether it’s contributing to a team or taking the lead when needed, I value collaboration and clear communication.                </p>
                 <p>
-                    Beyond the academic realm, you'll often find me immersed in video games, keeping up with my fitness routine at the gym, enjoying shows and anime, listening to music or working on intriguing web projects. Maintaining that balance between work and play is key, don't you think? 😊
+                    Outside of work, I’m into gaming, staying active at the gym, watching anime and shows, exploring music, or tinkering with side projects. I believe in keeping a good balance between productivity and fun — it keeps things interesting! 😊
                 </p>
             </div>
             <div className="flex justify-center md:justify-start">

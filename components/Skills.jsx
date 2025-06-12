@@ -6,16 +6,16 @@ const Skills = () => {
     const skills = {
         languages: [
             {
+                name: "Java",
+                image: "/assets/skills/languages/java.png"
+            },
+            {
                 name: "C",
                 image: "/assets/skills/languages/c.png"
             },
             {
                 name: "C++",
                 image: "/assets/skills/languages/c-.png"
-            },
-            {
-                name: "Java",
-                image: "/assets/skills/languages/java.png"
             },
             {
                 name: "HTML",
@@ -35,18 +35,18 @@ const Skills = () => {
                 name: "React.js",
                 image: "/assets/skills/frameworks/react.png"
             },
-            {
-                name: "Vue.js",
-                image: "/assets/skills/frameworks/vuejs.png"
-            },
+            // {
+            //     name: "Vue.js",
+            //     image: "/assets/skills/frameworks/vuejs.png"
+            // },
             {
                 name: "Next.js",
                 image: "/assets/skills/frameworks/nextjs.png"
             },
-            {
-                name: "Nuxt.js",
-                image: "/assets/skills/frameworks/nuxt-js-icon.png"
-            },
+            // {
+            //     name: "Nuxt.js",
+            //     image: "/assets/skills/frameworks/nuxt-js-icon.png"
+            // },
             {
                 name: "Node.js",
                 image: "/assets/skills/frameworks/nodejs.png"
@@ -59,10 +59,10 @@ const Skills = () => {
                 name: "Spring Boot",
                 image: "/assets/skills/frameworks/spring.svg"
             },
-            {
-                name: "EJS",
-                image: "/assets/skills/frameworks/ejs.svg"
-            },
+            // {
+            //     name: "EJS",
+            //     image: "/assets/skills/frameworks/ejs.svg"
+            // },
             {
                 name: "MySql",
                 image: "/assets/skills/frameworks/mysql.png"
@@ -75,14 +75,14 @@ const Skills = () => {
                 name: "Tailwind CSS",
                 image: "/assets/skills/frameworks/tailwind.png"
             },
-            {
-                name: "Bootstrap",
-                image: "/assets/skills/frameworks/bootstrap.png"
-            },
-            {
-                name: "Vuetify",
-                image: "/assets/skills/frameworks/vuetify.svg"
-            },
+            // {
+            //     name: "Bootstrap",
+            //     image: "/assets/skills/frameworks/bootstrap.png"
+            // },
+            // {
+            //     name: "Vuetify",
+            //     image: "/assets/skills/frameworks/vuetify.svg"
+            // },
         ],
         tools: [
             {
@@ -94,17 +94,25 @@ const Skills = () => {
                 image: "/assets/skills/tools/github.png"
             },
             {
-                name: "Netlify",
-                image: "/assets/skills/tools/netlify.png"
+                name: "Docker",
+                image: "/assets/skills/tools/docker.png"
             },
             {
-                name: "Vercel",
-                image: "/assets/skills/tools/vercel.png"
+                name: "Amazon Web Services",
+                image: "/assets/skills/tools/aws.png"
             },
-            {
-                name: "Postman",
-                image: "/assets/skills/tools/postman-icon.png"
-            }
+            // {
+            //     name: "Netlify",
+            //     image: "/assets/skills/tools/netlify.png"
+            // },
+            // {
+            //     name: "Vercel",
+            //     image: "/assets/skills/tools/vercel.png"
+            // },
+            // {
+            //     name: "Postman",
+            //     image: "/assets/skills/tools/postman-icon.png"
+            // }
         ]
     }
 

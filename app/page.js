@@ -22,8 +22,8 @@ const Home = () => {
     <section className="md:pt-10 w-full">
       <Intro />
       <About />
-      <Education />
       <Experience />
+      <Education />
       <Skills />
       <Contact />
     </section>

@@ -5,10 +5,17 @@ const Experience = () => {
 
     const experiences = [
         {
-            name: "Access Research Labs (ARL)",
-            title: "Fullstack Developer (INTERN)",
-            link: "https://accessresearchlabs.com/",
-            duration: "Jan 2024 - present"
+            name: "Sclera VDMS Private Limited",
+            title: "Associate Fullstack Developer",
+            link: "https://sclera.com/",
+            duration: "Jan 2024 - present",
+            description: [
+                "Developed a custom Android synchronization library in Java to ensure offline availability, using timestamp-based syncing between MySQL and SQLite. Optimized memory and bandwidth with streaming for data and multipart streaming for media across multiple Android apps.",
+                "Implemented a custom VPN and local-only hotspot on Android using Java sockets, including TCP tunneling and in-app packet analysis to ensure secure, efficient, and reliable network communication.",
+                "Implemented LUKS full-disk encryption with AES to secure off-premise hardware. Developed a Shell script to retrieve decryption keys from the cloud, and enabled offline access via USB for added flexibility and security in remote environments.",
+                "Contributed to an ESP32-based system with Wi-Fi mesh networking. Used C programming to integrate Bluetooth Low Energy (BLE) for OTA updates and optimized sensor performance for seamless communication between devices."
+            ]
+
         },
         {
             name: "Exelon Circuits Pvt. Ltd.",
@@ -39,7 +46,7 @@ const Experience = () => {
                     <p className='text-sm md:text-lg'>{experience.duration}</p>
                 </div>
                 {
-                    experience.description && 
+                    experience.description &&
                     <div className='p-1 md:p-4 border-t border-[#ffffff20]'>
                         <ul>
                             {

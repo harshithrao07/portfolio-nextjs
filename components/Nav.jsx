@@ -54,11 +54,13 @@ const Nav = () => {
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>
                         <div className="flex items-center gap-x-1">
-                            <Button
-                                className="hidden lg:inline-block bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform-gpu"
-                            >
-                                <span className="font-normal text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
-                            </Button>
+                            <Link href="https://flowcv.com/resume/hj7caj6o85" target="_blank">
+                                <Button
+                                    className="hidden lg:inline-block bg-transparent rounded-none border hover:border-[#FFAE00] group transition duration-300 transform-gpu"
+                                >
+                                    <span className="font-normal text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
+                                </Button>
+                            </Link>
                         </div>
                         <IconButton
                             variant="text"
@@ -102,13 +104,13 @@ const Nav = () => {
                 <Collapse open={openNav}>
                     {navList}
                     <div className="flex items-center gap-x-1">
-                    <Link href="https://flowcv.com/resume/hj7caj6o85" target="_blank">
-                        <Button
-                            className="w-full md:w-fit py-2 mb-2 bg-transparent rounded-none border live-site hover:border-[#FFAE00] group transition duration-300 transform-gpu"
-                        >
-                            <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
-                        </Button>
-                    </Link>
+                        <Link href="https://flowcv.com/resume/hj7caj6o85" target="_blank">
+                            <Button
+                                className="w-full md:w-fit py-2 mb-2 bg-transparent rounded-none border live-site hover:border-[#FFAE00] group transition duration-300 transform-gpu"
+                            >
+                                <span className="font-normal text-xs md:text-md group-hover:text-[#FFAE00] transition duration-300 transform-gpu">View Resume</span>
+                            </Button>
+                        </Link>
                     </div>
                 </Collapse>
             </Navbar>

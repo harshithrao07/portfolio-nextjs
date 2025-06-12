@@ -16,13 +16,48 @@ const Projects = () => {
             images: "/assets/projects/sneakers.png"
         },
         {
+            name: "Kenfront and SpendControl",
+            about: [
+                "An engaging multi-page landing site for Kenfront Consulting Private Limited and its product , SpendControl with animations using Anime.js.",
+                "Built using latest technologies which offers enhanced performance resulting in a seamless user experience."
+            ],
+            tech: ["Vue.js", "Nuxt.js", "Vuetify", "Anime.js", "Netlify"],
+            liveSite: "https://kenfront.netlify.app/",
+            images: "/assets/projects/kenfront.png"
+        },
+        {
+            name: "Serverless Library Portal",
+            about: [
+                "User authentication and authorization with Amazon Cognito, secure storage of book images and PDFs using Amazon S3, and seamless API integration with GraphQL and AWS AppSync.",
+                "Payment processing and subscription management are handled through Stripe, while DynamoDB manages database storage for book, order, and cart-related information.",
+                "Received commendation prize from WENAMITAA (NITTE Alumni Association) for undertaking this project."
+            ],
+            tech: ["React.js", "React-Router", "AWS Amplify", "AppSync", "GraphQL", "Amazon S3", "Cognito", "AWS Lambda", "DynamoDB", "Stripe", "Tailwind CSS", "Material-Tailwind"],
+            // liveSite: "https://dc4802yfw21du.cloudfront.net/",
+            sourceCode: "https://github.com/harshithrao07/serverless-libary",
+            images: "/assets/projects/serverless-libray-portal.png"
+        },
+        {
+            name: "Socials",
+            about: [
+                "Socials is a dynamic blogging platform that blends content creation with AI-driven features for enhanced user experience and engagement.",
+                "Leverages Google Gemini for AI support, enabling powerful content generation and editing assistance.",
+                "Built on Cloudflare Workers using Hono JS, ensuring scalable and performant backend operations.",
+                "Utilizes Prisma with connection pooling for fast and reliable database operations."
+            ],
+            tech: ["React.js", "React-Router", "Redux", "Prisma", "Google Gemini API", "Amazon S3", "Hono JS", "PostgreSQL", "Tailwind CSS", "Material-Tailwind"],
+            // liveSite: "https://socials-lilac.vercel.app/",
+            sourceCode: "https://github.com/harshithrao07/socials",
+            images: "/assets/projects/socials.png"
+        },
+        {
             name: "Vanlife",
             about: [
                 "Welcome to our user-friendly Van Rental App, designed with a strong emphasis on providing a seamless navigation experience and a polished interface to enhance overall usability.",
                 "Integrated Firebase Authentication and Firestore Database for efficient and streamlined data storage."
             ],
             tech: ["React.js", "React-Router", "Vite.js", "Firebase Auth", "Firestore DB", "Netlify"],
-            liveSite: "https://the-vanlife.netlify.app/",
+            // liveSite: "https://the-vanlife.netlify.app/",
             sourceCode: "https://github.com/harshithrao07/-vanlife",
             images: "/assets/projects/vanlife.png"
         },
@@ -34,19 +69,9 @@ const Projects = () => {
                 "The outcome is a captivating front page inviting users to explore the marvels of outer space through a modern and feature-rich web experience."
             ],
             tech: ["Vue.js", "Nuxt.js", "Firebase", "Vuetify", "Vercel"],
-            liveSite: "https://tourism-space.vercel.app/",
+            // liveSite: "https://tourism-space.vercel.app/",
             sourceCode: "https://github.com/harshithrao07/space-tourism",
             images: "/assets/projects/space-tourism.png"
-        },
-        {
-            name: "Kenfront and SpendControl",
-            about: [
-                "An engaging multi-page landing site for Kenfront Consulting Private Limited and its product , SpendControl with animations using Anime.js.",
-                "Built using latest technologies which offers enhanced performance resulting in a seamless user experience."
-            ],
-            tech: ["Vue.js", "Nuxt.js", "Vuetify", "Anime.js", "Netlify"],
-            liveSite: "https://kenfront.netlify.app/",
-            images: "/assets/projects/kenfront.png"
         },
         {
             name: "Catadogs",
@@ -55,7 +80,7 @@ const Projects = () => {
                 "It also provides admin capabilities to add or delete animals and their details as needed."
             ],
             tech: ["Node.js", "Express.js", "EJS", "MongoDB", "Bootstrap", "Cyclic"],
-            liveSite: "https://frightened-ruby-stockings.cyclic.app/",
+            // liveSite: "https://frightened-ruby-stockings.cyclic.app/",
             sourceCode: "https://github.com/harshithrao07/Catadogs",
             images: "/assets/projects/catadogs.png"
 
@@ -67,7 +92,7 @@ const Projects = () => {
                 "It also includes features for managing multiple blogs and day-to-day activities with a To-Do List."
             ],
             tech: ["Node.js", "Express.js", "EJS", "MongoDB", "Bootstrap", "Cyclic"],
-            liveSite: "https://excited-jade-handkerchief.cyclic.app/",
+            // liveSite: "https://excited-jade-handkerchief.cyclic.app/",
             sourceCode: "https://github.com/harshithrao07/Blogr",
             images: "/assets/projects/blogr.png"
 
@@ -119,7 +144,7 @@ const Projects = () => {
                 </div>
             </div>
         ))
-    } 
+    }
 
     return (
         <div className='px-6 lg:px-16 lg:mb-16 mt-16 md:mt-24'>
