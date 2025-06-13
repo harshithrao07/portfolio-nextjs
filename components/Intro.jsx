@@ -9,15 +9,15 @@ import { Tilt } from 'react-tilt';
 const Intro = () => {
 
     const defaultOptions = {
-        reverse:        false,  // reverse the tilt direction
-        max:            35,     // max tilt rotation (degrees)
-        perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-        scale:          1,    // 2 = 200%, 1.5 = 150%, etc..
-        speed:          1000,   // Speed of the enter/exit transition
-        transition:     true,   // Set a transition on enter/exit.
-        axis:           null,   // What axis should be disabled. Can be X or Y.
-        reset:          true,    // If the tilt effect has to be reset on exit.
-        easing:         "cubic-bezier(0.4, 0.0, 0.2, 1)",    // Easing on enter/exit.
+        reverse: false,  // reverse the tilt direction
+        max: 35,     // max tilt rotation (degrees)
+        perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+        scale: 1,    // 2 = 200%, 1.5 = 150%, etc..
+        speed: 1000,   // Speed of the enter/exit transition
+        transition: true,   // Set a transition on enter/exit.
+        axis: null,   // What axis should be disabled. Can be X or Y.
+        reset: true,    // If the tilt effect has to be reset on exit.
+        easing: "cubic-bezier(0.4, 0.0, 0.2, 1)",    // Easing on enter/exit.
     }
 
     const icons = [
@@ -53,16 +53,33 @@ const Intro = () => {
     return (
         <div data-aos="fade-zoom-in" className='h-screen flex flex-col justify-evenly px-6 mb-5 lg:my-0 lg:px-0 md:grid place-items-center md:grid-cols-2 tracking-wide lg:tracking-wider cursor-default intro'>
             <div className='md:order-2 flex justify-center'>
-                <Tilt className="tilt-container px-5 md:px-0 w-full md:w-3/4 lg:w-full" options={defaultOptions}>
+                {/* Static image for mobile (hidden on md and above) */}
+                <div className="block md:hidden w-48 sm:w-60">
                     <Image
                         src="/assets/harshith_rao.jpeg"
                         height={300}
                         width={300}
                         alt='Harshith Rao'
-                        className='image w-full md:w-full transition duration-300 transform-gpu outline outline-2 outline-[#FFB000]'
+                        className='image w-full transition duration-300 outline outline-2 outline-[#FFB000] rounded-full object-cover mx-auto'
+                    />
+                </div>
+
+                {/* Tilt image for desktop (hidden on small screens) */}
+                <Tilt
+                    options={defaultOptions}
+                    className="hidden md:block md:w-64 lg:w-72 xl:w-80"
+                >
+                    <Image
+                        src="/assets/harshith_rao.jpeg"
+                        height={300}
+                        width={300}
+                        alt='Harshith Rao'
+                        className='image w-full transition duration-300 outline outline-2 outline-[#FFB000] rounded-full object-cover mx-auto'
                     />
                 </Tilt>
             </div>
+
+
             <div className='md:order-1 text-center md:text-left'>
                 <h1 className='font-semibold text-xl md:text-3xl lg:text-4xl intro-text '>
                     Hey, I'm <span className='golden-words md:border-bottom-texts'>Harshith</span><span className="wave text-2xl md:text-3xl lg:text-5xl">👋</span><br />

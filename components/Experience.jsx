@@ -72,7 +72,7 @@ const Experience = () => {
     }
 
     return (
-        <div className='px-6 lg:px-16 lg:my-16'>
+        <div className='px-6 lg:px-16 mt-5 lg:my-16'>
             <div className='flex justify-start'>
                 <h1 className='font-semibold border-b-2 md:border-b-4 border-[#FFAE00] w-fit lg:mb-4 text-xl md:text-3xl'>Experiences</h1>
             </div>
