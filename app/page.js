@@ -1,4 +1,5 @@
 "use client"
+
 import About from "@/components/About"
 import Education from "@/components/Education"
 import Experience from "@/components/Experience"
@@ -13,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-         duration: 800,
+         duration: 600,
          once: false,
        })
  }, [])
