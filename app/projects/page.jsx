@@ -28,18 +28,6 @@ const Projects = () => {
             images: "/assets/projects/kenfront.png"
         },
         {
-            name: "Serverless Library Portal",
-            about: [
-                "User authentication and authorization with Amazon Cognito, secure storage of book images and PDFs using Amazon S3, and seamless API integration with GraphQL and AWS AppSync.",
-                "Payment processing and subscription management are handled through Stripe, while DynamoDB manages database storage for book, order, and cart-related information.",
-                "Received commendation prize from WENAMITAA (NITTE Alumni Association) for undertaking this project."
-            ],
-            tech: ["React.js", "React-Router", "AWS Amplify", "AppSync", "GraphQL", "Amazon S3", "Cognito", "AWS Lambda", "DynamoDB", "Stripe", "Tailwind CSS", "Material-Tailwind"],
-            // liveSite: "https://dc4802yfw21du.cloudfront.net/",
-            sourceCode: "https://github.com/harshithrao07/serverless-libary",
-            images: "/assets/projects/serverless-libray-portal.png"
-        },
-        {
             name: "Socials",
             about: [
                 "Socials is a dynamic blogging platform that blends content creation with AI-driven features for enhanced user experience and engagement.",
@@ -48,9 +36,21 @@ const Projects = () => {
                 "Utilizes Prisma with connection pooling for fast and reliable database operations."
             ],
             tech: ["React.js", "React-Router", "Redux", "Prisma", "Google Gemini API", "Amazon S3", "Hono JS", "PostgreSQL", "Tailwind CSS", "Material-Tailwind"],
-            // liveSite: "https://socials-lilac.vercel.app/",
+            liveSite: "https://socials-lilac.vercel.app/",
             sourceCode: "https://github.com/harshithrao07/socials",
             images: "/assets/projects/socials.png"
+        },
+        {
+            name: "Serverless Library Portal",
+            about: [
+                "User authentication and authorization with Amazon Cognito, secure storage of book images and PDFs using Amazon S3, and seamless API integration with GraphQL and AWS AppSync.",
+                "Payment processing and subscription management are handled through Stripe, while DynamoDB manages database storage for book, order, and cart-related information.",
+                "Received commendation prize from WENAMITAA (NITTE Alumni Association) for undertaking this project."
+            ],
+            tech: ["React.js", "React-Router", "AWS Amplify", "AppSync", "GraphQL", "Amazon S3", "Cognito", "AWS Lambda", "DynamoDB", "Stripe", "Tailwind CSS", "Material-Tailwind"],
+            liveSite: "https://dev.d3h7yvv3paeq66.amplifyapp.com/",
+            sourceCode: "https://github.com/harshithrao07/serverless-libary",
+            images: "/assets/projects/serverless-libray-portal.png"
         },
         {
             name: "Vanlife",
@@ -59,7 +59,7 @@ const Projects = () => {
                 "Integrated Firebase Authentication and Firestore Database for efficient and streamlined data storage."
             ],
             tech: ["React.js", "React-Router", "Vite.js", "Firebase Auth", "Firestore DB", "Netlify"],
-            // liveSite: "https://the-vanlife.netlify.app/",
+            liveSite: "https://the-vanlife.netlify.app/",
             sourceCode: "https://github.com/harshithrao07/-vanlife",
             images: "/assets/projects/vanlife.png"
         },
@@ -71,7 +71,7 @@ const Projects = () => {
                 "The outcome is a captivating front page inviting users to explore the marvels of outer space through a modern and feature-rich web experience."
             ],
             tech: ["Vue.js", "Nuxt.js", "Firebase", "Vuetify", "Vercel"],
-            // liveSite: "https://tourism-space.vercel.app/",
+            liveSite: "https://tourism-space.vercel.app/",
             sourceCode: "https://github.com/harshithrao07/space-tourism",
             images: "/assets/projects/space-tourism.png"
         },
@@ -87,18 +87,18 @@ const Projects = () => {
             images: "/assets/projects/catadogs.png"
 
         },
-        {
-            name: "Blogr",
-            about: [
-                "Blogr is a user-friendly blogging platform that prioritizes content creation.",
-                "It also includes features for managing multiple blogs and day-to-day activities with a To-Do List."
-            ],
-            tech: ["Node.js", "Express.js", "EJS", "MongoDB", "Bootstrap", "Cyclic"],
-            // liveSite: "https://excited-jade-handkerchief.cyclic.app/",
-            sourceCode: "https://github.com/harshithrao07/Blogr",
-            images: "/assets/projects/blogr.png"
+        // {
+        //     name: "Blogr",
+        //     about: [
+        //         "Blogr is a user-friendly blogging platform that prioritizes content creation.",
+        //         "It also includes features for managing multiple blogs and day-to-day activities with a To-Do List."
+        //     ],
+        //     tech: ["Node.js", "Express.js", "EJS", "MongoDB", "Bootstrap", "Cyclic"],
+        //     liveSite: "https://excited-jade-handkerchief.cyclic.app/",
+        //     sourceCode: "https://github.com/harshithrao07/Blogr",
+        //     images: "/assets/projects/blogr.png"
 
-        }
+        // }
     ]
 
     const renderProjects = () => {
